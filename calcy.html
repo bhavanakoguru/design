@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    /* .inside{
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    margin: auto;
+    
+    }  */
+    #main{
+        width: 350px;
+        height: 450px;
+        border:1px solid white;
+        margin: auto;
+        margin-top: 60px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        border-radius: 8px;
+    }
+
+    .inside{
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,80px);
+    }
+
+    .inside >div{
+        margin: auto;   
+    } 
+    button{
+        width: 45px;
+        height: 45px;
+        border: 0px;
+        border-radius: 8px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+    input{
+        margin: auto;
+        display: block; 
+        width: 300px;
+        height: 60px;
+        margin-top: 50px;
+        margin: bottom 200px; 
+        border-radius: 7px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        border: 0px;
+    }
+    #box{
+        margin-top: 30px;
+    }
+    
+    .pen button{
+        color: white;
+        background-color: black;
+    }
+    #book button{
+        background-color: orangered;
+    }
+    .final button{
+        background-color: white;
+    }
+    h1{
+        color: teal;
+        text-align: center;
+        font-size: 45px;
+    }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Masai Calculater</h1>
+    <div id="main">
+        <div><input type="number"></div>
+        <div id="box">
+            
+     <div class="inside">
+            <div class="final"><button>1</button></div>
+            <div class="final"><button>2</button></div>
+            <div class="final"><button>3</button></div>
+            <div class="pen"><button>+</button></div>
+        <!-- </div>
+        <div class="inside"> -->
+            <div class="final"><button>4</button></div>
+            <div class="final"><button>5</button></div>
+            <div class="final"><button>6</button></div>
+            <div class="pen"><button>-</button></div>
+        <!-- </div>
+        <div class="inside"> -->
+            <div class="final"><button>7</button></div>
+            <div class="final"><button>8</button></div>
+            <div class="final"><button>9</button></div>
+            <div class="pen"><button>x</button></div>
+        <!-- </div>
+        <div class="inside"> -->
+            <div id="book"><button>C</button></div>
+            <div class="final"><button>0</button></div>
+            <div class="pen"><button>=</button></div>
+            <div class="pen"><button>/</button></div>
+    </div> 
+        </div>
+    </div>
+</body>
+</html>
